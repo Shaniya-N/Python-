@@ -2,12 +2,11 @@
 
 s=[]
 n=int(input("Count of numbers:"))
-print("Enter the numbers:")
-k=int(input("k:")) 
+print("Enter the numbers:") 
 for i in range(n):
     x=int(input())
     s.append(x)
-
+k=int(input("k:"))
 s.sort()
 print(f"Kth largest:{s[len(s)-k]}")
 
@@ -15,9 +14,9 @@ print(f"Kth largest:{s[len(s)-k]}")
 O/p:
     Count of numbers:3
     Enter the numbers:
-    k:2
-    56
     78
-    32
-    Kth largest:56
+    43
+    21
+    k:2
+    Kth largest:43
 '''
