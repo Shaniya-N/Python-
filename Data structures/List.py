@@ -21,11 +21,11 @@ print(listy[-1])    #last element      234
 listy[0]=3333    #Using index         
 print(listy)     #[3333, 'girl', 'book', [56, 92], [], '234']
 
-print(listy.append("door")) #appends an element to the end of the list    
-                            #[[3333, 'girl', 'book', [56, 92], [], '234', 'door']
+listy.append("door")                #appends an element to the end of the list    
+print(listy)                        #[3333, 'girl', 'book', [56, 92], [], '234', 'door']
 
-print(listy.insert(3,"window")) #inserts an element at a specified index
-                                #[3333, 'girl', 'book', 'window', [56, 92], [], '234', 'door']
+listy.insert(3,"window")            #inserts an element at a specified index
+print(listy)                        #[3333, 'girl', 'book', 'window', [56, 92], [], '234', 'door']
 
 #Removing elements from list
 
@@ -43,10 +43,11 @@ print(listy)           #[3333, 'girl', 'book', [56, 92], []]
 listy.remove(3333)     #removing an item by its value (removes only the first occurrence)
 print(listy)           #['girl', 'book', [56, 92], []]
 
-listy.clear()          #clear the whole list
+n=[5,45,8]
+n.clear()          #clear the whole list
 
 # SORTING THE LIST
-
+print("SORTING THE LIST")
 book=["Magic","Speed","Bad blood","Goblin"]
 
 #sort() method
@@ -70,7 +71,7 @@ print(sorted(movies,reverse=True))   #In reverse order
                                      #['Star wars', 'Shutter island', 'Old dads', 'Bruce almighty']
 
 #LOOPING THROUGH LISTS
-
+print("LOOPING THROUGH LISTS")
 magicians = ['alice', 'david', 'carolina'] 
 for magician in magicians:        #For every magician in the list of magicians, print the magician’s name.
     print(magician)               #alice 
@@ -131,3 +132,21 @@ if items:
     print("Fruits are available")
 else:
     print("The store room is empty")
+
+#While loop over a list
+
+under_review=["asla","hayat","virat","simba","ziya"]
+confirmed=[]
+
+while under_review:          #Continues until the list is empty
+    user=under_review.pop()
+    if len(user)>=3:
+        confirmed.append(user)
+print(sorted(confirmed))
+
+#Removing multiple occurences of an item from list
+cars=['bmw','audi','mercedes','bmw','ferrari','Tesla','bmw']
+print(cars)
+while 'bmw' in cars:
+    cars.remove('bmw')
+print(f"All bmw's removed:{cars}")
