@@ -1,0 +1,53 @@
+CLASSES
+
+->Classes represents real-world things and situations, and objects are created based on these classes.
+->It acts as a blue print for creating objects.
+->When a class is created,the  the general behavior f the  whole category of objects are defined.
+->When individual objects are created from a class, each object is automatically equipped with the general behaviors;
+  unique traits for each object can be given afterwards.
+
+OBJECTS
+
+->Objects are instances of a class.
+->A class can have any number of objects
+
+INSTANTIATION
+
+->Making an object of a class is called instantiation, and we work with instances of a class.
+
+CREATING A CLASS
+
+class Car():
+    def __init__(self,model,color):
+        self.model = model
+        self.color=color
+    def milage(self):
+        print(f"{self.model.title()} has good milage)
+    def speed(self):
+        print(f"{self.model.title()} has good speed)
+
+->Car() :
+    It is the name of the class, it starts with an upper case
+->A function inside a class is called a "METHOD"
+->__init__ method:
+    It is a special method Python runs automatically whenever a new instance is created.
+    The self parameter is required in the method definition, and it must come before other parameters
+
+    Every method call associated with a class automatically passes self, which 
+    is a reference to the instance itself; it gives the individual instance access to 
+    the attributes and methods in the class.
+
+->self
+    -> It must be included in the definition because when Python calls this __init__() method
+    later (to create an instance of Car), the method call will automatically pass the self argument. 
+    ->Every method call associated with a class automatically passes self, which is a reference to the instance itself; 
+    it gives the individual instance access to the attributes and methods in the class.
+
+->self.model ,self.color
+    Any variable prefixed with self is available to every method in the class, and we’ll also be 
+    able to access these variables through any instance created from the class. 
+    Variables that are accessible through instances like this are called "ATTRIBUTES".
+    
+->Creating an object of class car
+
+my_ca=Car("WagonR","White")
