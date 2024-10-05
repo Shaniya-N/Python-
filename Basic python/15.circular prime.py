@@ -7,7 +7,7 @@ def isprime(n):
     if n==0 or n==1:
         return True
     else:
-        for i in range(2,n):
+        for i in range(2,int(n/2)):
             if n%i==0:
                 return False
         return True

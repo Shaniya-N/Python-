@@ -8,7 +8,7 @@ for i in range(n):
     s.append(x)
 k=int(input("k:"))
 s.sort()
-print(f"Kth largest:{s[len(s)-k]}")
+print(f"Kth largest:{s[-k]}")
 
 '''
 O/p:
