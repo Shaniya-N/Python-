@@ -26,6 +26,8 @@ if __name__ == '__main__':
     a=f"{avg:.2f}"
     print(a)
 
-*inp,=input().split()
-inp=list(map(int,input))
-print(input)
+
+# Getting multiple input values
+# *inputs,=input().split()       #',' is to let the program know that multiple inputs are to be expected
+# inputs=list(map(int,input))
+# print(inputs)
