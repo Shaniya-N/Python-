@@ -4,7 +4,7 @@
 # When checking for circular primes, only the left rotations are considered.
 
 def isprime(n):
-    if n==0 or n==1:
+    if n<=1:
         return True
     else:
         for i in range(2,int(n/2)):
