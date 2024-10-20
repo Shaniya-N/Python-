@@ -4,7 +4,10 @@
 # Square brackets ([]) indicate a list, and individual elements in the list are separated by commas.
 
 listy=[2222,"girl","book",[56,92],[],"234"]
-print(listy)        #[2222, 'girl', 'book', [56, 92], [], '234']
+listy1=[0,9]
+listy1=listy
+print(listy1)        #[2222, 'girl', 'book', [56, 92], [], '234']
+
 
 
 # ACCESSING ELEMENTS
@@ -26,6 +29,7 @@ print(listy)                        #[3333, 'girl', 'book', [56, 92], [], '234',
 
 listy.insert(3,"window")            #inserts an element at a specified index
 print(listy)                        #[3333, 'girl', 'book', 'window', [56, 92], [], '234', 'door']
+
 
 #Removing elements from list
 
