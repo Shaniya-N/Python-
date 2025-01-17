@@ -30,3 +30,12 @@ O/P:
     Number:3455678
     7
 '''
+
+# Find the sum of digits in a number
+n=int(input("Number:"))
+sum=0
+while n>0:
+    digit=n%10
+    sum+=digit
+    n=n//10
+print(sum)

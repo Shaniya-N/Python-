@@ -4,8 +4,7 @@ s=[]
 n=int(input("Count of numbers:"))
 print("Enter the numbers:") 
 for i in range(n):
-    x=int(input())
-    s.append(x)
+    s.append(int(input()))
 k=int(input("k:"))
 s.sort()
 print(f"Kth largest:{s[-k]}")

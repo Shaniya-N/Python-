@@ -4,13 +4,12 @@ a=[]
 n=int(input("Count of numbers:"))
 print("Enter the numbers:")
 for i in range(n):
-    x=int(input())
-    a.append(x)
+    a.append(int(input()))
 
-s=a[0]
-for i in range(n):
-    if a[i]<s:
-        s=a[i]
+s=float('inf')
+for i in a:
+    if i<s:
+        s=i
 
 print(f"Smallest number:{s}")
 

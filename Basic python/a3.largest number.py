@@ -3,12 +3,11 @@ s=[]
 n=int(input("Count of numbers:"))
 print("Enter the numbers:")
 for i in range(n):
-    x=int(input())
-    s.append(x)
+    s.append(int(input()))
 l=s[0]
-for i in range(n):
-    if s[i]>l:
-        l=s[i]
+for i in s:
+    if i>l:
+        l=i
 print(f"The largest number is {l}")
 
 '''
@@ -23,7 +22,12 @@ O/P:
     The largest number is 65
 '''
     
-
+s=[]
+n=int(input("Count of numbers:"))
+print("Enter the numbers:")
+for i in range(n):
+    s.append(int(input()))
+print(max(s))
 
 
 
