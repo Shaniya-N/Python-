@@ -1,6 +1,5 @@
-s=[]
-n=int(input("Count of numbers:"))
-print("Enter the numbers:")
-for i in range(n):
-    s.append(int(input()))
-print(max(s))
+# Reverse the digits in a number
+n=int(input("Enter the number:"))
+
+rev_num=int(str(n)[::-1])
+print(f"Reversed number:{rev_num}")

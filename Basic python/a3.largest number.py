@@ -31,4 +31,16 @@ print(max(s))
 
 
 
+s=[]
+n=int(input("Count of numbers:"))
+print("Enter the numbers:")
+for i in range(n):
+    s.append(int(input()))
+largest=float('-inf')
+for i in s:
+    if i>largest:
+        largest=i
+print(largest) 
+
+
 
